@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function animacja(obj){
+            // document.querySelectorAll("td");
+            console.log(obj.children[0]);
+            obj.classList.add("anim1");
+            obj.children[0].classList.add("anim0");
+        }
+        function usuwanie(obj){
+            obj.classList.remove("anim1");
+            obj.children[0].classList.remove("anim0");
+        }
+
+    </script>
+    </head>
+<body>
+    <table>
+        <tr>
+            <td onmouseout="usuwanie(this)" onclick="animacja(this)" colspan="2"><div></div></td><td onmouseout="usuwanie(this)" onclick="animacja(this)"><div></div></td>
+        </tr>
+        <tr>
+            <td onmouseout="usuwanie(this)" onclick="animacja(this)"><div></div></td><td onmouseout="usuwanie(this)" onclick="animacja(this)"><div></div></td><td onmouseout="usuwanie(this)" onclick="animacja(this)"><div></div></td>
+        </tr>
+        <tr>
+            <td onmouseout="usuwanie(this)" onclick="animacja(this)"><div></div></td><td onmouseout="usuwanie(this)" onclick="animacja(this)"><div></div></td><td onmouseout="usuwanie(this)" onclick="animacja(this)" rowspan="2"><div></div></td>
+        </tr>
+        <tr>
+            <td onmouseout="usuwanie(this)" onclick="animacja(this)"><div></div></td><td onmouseout="usuwanie(this)" onclick="animacja(this)"><div></div></td>
+        </tr>
+        
+
+
+
+    </table>
+    
+</body>
+</html>
